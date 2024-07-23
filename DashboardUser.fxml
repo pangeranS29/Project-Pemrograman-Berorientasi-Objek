@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="809.0" prefWidth="1145.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.DashboardUserController">
+   <children>
+      <Label layoutX="478.0" layoutY="248.0" text="HOME">
+         <font>
+            <Font name="Times New Roman Bold" size="45.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIcon glyphName="HOME" />
+         </graphic>
+      </Label>
+      <Pane prefHeight="231.0" prefWidth="1329.0" style="-fx-background-color: #87CEFA;" AnchorPane.bottomAnchor="590.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="36.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@church.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="209.0" layoutY="51.0" text="HKBP" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="209.0" layoutY="137.0" text="PALMARUM TARUTUNG" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="36.0" />
+               </font>
+            </Label>
+         </children></Pane>
+      <Pane layoutX="261.0" layoutY="332.0" prefHeight="358.0" prefWidth="623.0" AnchorPane.bottomAnchor="119.0" AnchorPane.leftAnchor="261.0" AnchorPane.rightAnchor="261.0" AnchorPane.topAnchor="332.0">
+         <children>
+            <AnchorPane layoutX="-103.0" layoutY="-15.0" prefHeight="413.0" prefWidth="726.0">
+               <children>
+                  <GridPane hgap="10.0" layoutX="-37.0" prefHeight="413.0" prefWidth="586.0" vgap="10.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="279.0" minWidth="10.0" prefWidth="278.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="335.0" minWidth="10.0" prefWidth="294.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints maxHeight="293.0" minHeight="10.0" prefHeight="193.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="211.0" minHeight="10.0" prefHeight="210.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Button fx:id="btnBaptis" contentDisplay="TOP" mnemonicParsing="false" prefHeight="193.0" prefWidth="278.0" styleClass="button1" stylesheets="@DashboardUser.css" text="BAPTIS">
+                           <graphic>
+                              <ImageView fitHeight="84.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@baptism.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font name="Times New Roman Bold" size="15.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </Button>
+                        <Button fx:id="btnPernikahan" contentDisplay="TOP" mnemonicParsing="false" prefHeight="202.0" prefWidth="288.0" styleClass="button1" stylesheets="@DashboardUser.css" text="PERNIKAHAN" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="84.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Pernikahan.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnLogout" contentDisplay="TOP" mnemonicParsing="false" prefHeight="202.0" prefWidth="288.0" styleClass="button1" stylesheets="@DashboardUser.css" text="LOGOUT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="84.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@Logout.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                        <Button fx:id="btnSejarahGereja" contentDisplay="TOP" mnemonicParsing="false" prefHeight="202.0" prefWidth="288.0" styleClass="button1" stylesheets="@DashboardUser.css" text="SEJARAH GEREJA" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Times New Roman Bold" size="15.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="84.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@sejarahpng.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </GridPane>
+                  <Button fx:id="btnNaiksidi" contentDisplay="TOP" layoutX="549.0" mnemonicParsing="false" prefHeight="202.0" prefWidth="288.0" styleClass="button1" stylesheets="@DashboardUser.css" text="NAIK SIDI">
+                     <font>
+                        <Font name="Times New Roman Bold" size="15.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="84.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@SIDI.jpg" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

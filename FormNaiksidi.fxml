@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1319.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.FormNaiksidiController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="477.0" layoutY="173.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="348.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="576.0" prefWidth="320.0" stylesheets="@CrudFormbaptis.css">
+                           <styleClass>
+                              <String fx:value="white-form" />
+                              <String fx:value="border" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="35.0" layoutY="65.0" text="Nama  Calon :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNama" layoutX="35.0" layoutY="83.0" prefHeight="31.0" prefWidth="250.0" />
+                              <Label layoutX="35.0" layoutY="120.0" text="Jenis Kelamin :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox fx:id="txtJenisKelamin" layoutX="35.0" layoutY="144.0" onAction="#baptisJKList" prefHeight="31.0" prefWidth="250.0" promptText="Pilih" />
+                              <TextField fx:id="txtTanggalLahir" layoutX="35.0" layoutY="204.0" prefHeight="31.0" prefWidth="250.0" />
+                              <Label layoutX="35.0" layoutY="186.0" text="Tanggal Lahir :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="39.0" layoutY="242.0" text="Nama Ayah :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtNamaAyah" layoutX="35.0" layoutY="260.0" prefHeight="31.0" prefWidth="250.0" />
+                              <TextField fx:id="txtNamaIbu" layoutX="35.0" layoutY="324.0" prefHeight="31.0" prefWidth="250.0" />
+                              <Label layoutX="35.0" layoutY="297.0" text="Nama Ibu :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="35.0" layoutY="363.0" text="Gereja:">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="crud_addBtn" layoutX="37.0" layoutY="448.0" mnemonicParsing="false" onAction="#naiksidiAddBtn" prefHeight="40.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Add" />
+                              <Button fx:id="crud_updateBtn" layoutX="174.0" layoutY="448.0" mnemonicParsing="false" onAction="#naiksidiUpdateBtn" prefHeight="42.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Update" />
+                              <Button fx:id="crud_deleteBtn" layoutX="174.0" layoutY="499.0" mnemonicParsing="false" onAction="#naiksidiDeleteBtn" prefHeight="45.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Delete" />
+                              <Button fx:id="crud_readBtn" layoutX="37.0" layoutY="499.0" mnemonicParsing="false" onAction="#naiksidiReadBtn" prefHeight="41.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Read" />
+                              <ComboBox fx:id="txtGereja" layoutX="35.0" layoutY="388.0" prefHeight="31.0" prefWidth="250.0" promptText="Pilih Gereja" />
+                              <Label layoutX="57.0" layoutY="22.0" text="FORM NAIK SIDI">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="25.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Separator layoutX="341.0" layoutY="11.0" orientation="VERTICAL" prefHeight="573.0" prefWidth="2.0" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="5.0" layoutY="12.0" prefHeight="576.0" prefWidth="948.0" stylesheets="@CrudFormbaptis.css">
+                           <styleClass>
+                              <String fx:value="white-form" />
+                              <String fx:value="border" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="crud_tableView" layoutX="14.0" layoutY="17.0" onMouseClicked="#naiksidiSelectData" prefHeight="542.0" prefWidth="921.0">
+                                <columns>
+                                  <TableColumn fx:id="tbl_Nama" prefWidth="116.0" text="Nama Calon" />
+                                  <TableColumn fx:id="tbl_jk" prefWidth="119.0" text="Jenis Kelamin" />
+                                    <TableColumn fx:id="tbl_tanggal" prefWidth="113.0" text="Tangal Lahir" />
+                                    <TableColumn fx:id="tbl_ayah" prefWidth="106.0" text="Nama Ayah" />
+                                    <TableColumn fx:id="tbl_ibu" minWidth="0.0" prefWidth="123.0" text="Nama Ibu" />
+                                    <TableColumn fx:id="tbl_gereja" minWidth="0.0" prefWidth="181.0" text="Gereja" />
+                                    <TableColumn fx:id="tbl_status" minWidth="0.0" prefWidth="161.0" text="Status" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

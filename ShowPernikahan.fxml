@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.ShowPernikahanController">
+   <children>
+      <Pane layoutX="29.0" layoutY="26.0" prefHeight="85.0" prefWidth="1062.0" style="-fx-background-color: #7156DD;">
+         <children>
+            <Label layoutX="365.0" layoutY="23.0" text="Konfirmasi Data Pernikahan" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tblViewpernikahan" layoutX="85.0" layoutY="158.0" onMouseClicked="#handleStatusClick" prefHeight="372.0" prefWidth="949.0">
+        <columns>
+          <TableColumn fx:id="col_idpernikahan" prefWidth="117.0" text="id_pernikahan" />
+          <TableColumn fx:id="col_user" prefWidth="101.0" text="user_id" />
+            <TableColumn fx:id="col_suami" prefWidth="110.0" text="CalonSuami" />
+            <TableColumn fx:id="col_istri" prefWidth="127.0" text="Calon Istri" />
+            <TableColumn fx:id="col_tanggal" prefWidth="168.0" text="tanggal pernikahan" />
+            <TableColumn fx:id="col_tempat" prefWidth="180.0" text="tempat pernikahan" />
+            <TableColumn fx:id="col_status" prefWidth="143.0" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

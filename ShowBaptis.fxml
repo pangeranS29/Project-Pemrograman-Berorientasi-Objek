@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="615.0" prefWidth="1119.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.ShowBaptisController">
+   <children>
+      <Pane layoutX="29.0" layoutY="26.0" prefHeight="85.0" prefWidth="1062.0" style="-fx-background-color: #7156DD;">
+         <children>
+            <Label layoutX="365.0" layoutY="23.0" text="Konfirmasi Data Baptis" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TableView fx:id="tblViewbaptis" layoutX="29.0" layoutY="151.0" onMouseClicked="#handleStatusClick" prefHeight="372.0" prefWidth="1062.0">
+        <columns>
+          <TableColumn fx:id="col_baptis" prefWidth="75.0" text="id_baptis" />
+          <TableColumn fx:id="col_user" prefWidth="75.0" text="user_id" />
+            <TableColumn fx:id="col_nama" prefWidth="126.0" text="nama_calon" />
+            <TableColumn fx:id="col_jk" prefWidth="126.0" text="jenis_kelamin" />
+            <TableColumn fx:id="col_tanggal" prefWidth="126.0" text="tanggal_lahir" />
+            <TableColumn fx:id="col_ayah" prefWidth="116.0" text="nama_ayah" />
+            <TableColumn fx:id="col_ibu" prefWidth="116.0" text="nama_ibu" />
+            <TableColumn fx:id="col_gereja" prefWidth="155.0" text="gereja" />
+            <TableColumn fx:id="col_status" prefWidth="155.0" text="status" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

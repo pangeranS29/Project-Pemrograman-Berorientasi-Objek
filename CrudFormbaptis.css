@@ -1,0 +1,59 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : May 1, 2024, 10:46:01 AM
+    Author     : User
+*/
+
+.white-form{
+    
+   -fx-background-color: #fff;
+   -fx-background-radius:8px;
+}
+
+
+.border{
+    -fx-border-color: linear-gradient(to bottom right,#1E90FF,#87CEFA);
+    -fx-border-width: 1px;
+    -fx-border-radius:8px;
+}
+
+.btn{
+    -fx-background-color: linear-gradient(to bottom right, #1E90FF ,#87CEFA);
+    -fx-text-fill: #fff;
+    -fx-fontt-size:14px;
+}
+
+.btn:hover{
+    -fx-background-color: linear-gradient(to bottom right,#0E639C,#155F85);
+}
+
+.table-view{
+    -fx-padding:0px;
+    -background-color:transparent;
+    -fx-border-color: linear-gradient(to bottom right,#1E90FF,#87CEFA);
+    -fx-border-radius:8px;
+    -fx-border-width:2px;
+}
+
+.table-view .column-header{
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(to bottom right,#1E90FF,#87CEFA);
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-background-inset: 0 0 0 0;
+}
+
+.table-view .column-header,.filter{
+    -fx-background-color: transparent;
+    -fx-size:50px;
+}
+
+.table-view .column-header .label{
+    -fx-text-fill: #fff;
+    -fx-font-family:Times New Roman;    
+}

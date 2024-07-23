@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="bp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="619.0" prefWidth="1392.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.DashboardAdminController">
+   <left>
+      <VBox prefHeight="400.0" prefWidth="215.0" style="-fx-background-color: #3F2B63;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="99.0" prefWidth="166.0">
+               <children>
+                  <Label layoutX="6.0" layoutY="48.0" text="HKBP PALMARUM TARUTUNG" textFill="WHITE">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="83.0" layoutY="27.0" text="ADMIN" textFill="WHITE" />
+               </children>
+            </Pane>
+            <Button mnemonicParsing="false" onMouseClicked="#home" prefHeight="48.0" prefWidth="218.0" style="-: ;" stylesheets="@DashboardAdmin.css" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#baptis" prefHeight="48.0" prefWidth="218.0" style="-: ;" stylesheets="@DashboardAdmin.css" text="Data Baptis" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#pernikahan" prefHeight="48.0" prefWidth="218.0" style="-: white;" stylesheets="@DashboardAdmin.css" text="Data Pernikahan" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#naiksidi" prefHeight="48.0" prefWidth="218.0" style="-: white;" stylesheets="@DashboardAdmin.css" text="Data Naik Sidi" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#sejarahgereja" prefHeight="48.0" prefWidth="218.0" style="-: white;" stylesheets="@DashboardAdmin.css" text="Data Sejarah Gereja" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnLogout" mnemonicParsing="false" prefHeight="48.0" prefWidth="218.0" style="-: white;" stylesheets="@DashboardAdmin.css" text="Log Out" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="ap" prefHeight="484.0" prefWidth="962.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="297.0" layoutY="278.0" text="Selamat Datang Di Halaman Admin ">
+               <font>
+                  <Font name="Times New Roman Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,21 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Apr 28, 2024, 10:03:26 PM
+    Author     : User
+*/
+
+.button1{
+    -fx-background-color: #F3F3F3;
+}
+
+.button1 :hover
+{
+   -fx-background-color:#A1C1F4; 
+}
+.button1:pressed{
+    -fx-background-color: #73A3EF;
+}
+

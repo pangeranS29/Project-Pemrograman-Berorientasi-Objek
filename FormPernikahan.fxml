@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1247.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project3.FormPernikahanController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <BorderPane layoutX="477.0" layoutY="173.0" prefHeight="600.0" prefWidth="1100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <left>
+                  <AnchorPane prefHeight="600.0" prefWidth="348.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="12.0" layoutY="14.0" prefHeight="576.0" prefWidth="320.0" stylesheets="@CrudFormbaptis.css">
+                           <styleClass>
+                              <String fx:value="white-form" />
+                              <String fx:value="border" />
+                           </styleClass>
+                           <children>
+                              <Label layoutX="35.0" layoutY="99.0" text="Nama  Calon Suami :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCalonSuami" layoutX="35.0" layoutY="117.0" prefHeight="31.0" prefWidth="250.0" />
+                              <Label layoutX="35.0" layoutY="154.0" text="Nama Calon Istri">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtTanggal" layoutX="35.0" layoutY="228.0" prefHeight="31.0" prefWidth="250.0" />
+                              <Label layoutX="35.0" layoutY="210.0" text="Hari &amp; Tanggal Pernikahan :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="38.0" layoutY="270.0" text="Tempat Pernikahan :">
+                                 <font>
+                                    <Font name="Times New Roman" size="15.0" />
+                                 </font>
+                              </Label>
+                              <Button fx:id="crud_addBtn" layoutX="42.0" layoutY="371.0" mnemonicParsing="false" onAction="#pernikahanAddBtn" prefHeight="40.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Add" />
+                              <Button fx:id="crud_updateBtn" layoutX="179.0" layoutY="371.0" mnemonicParsing="false" onAction="#pernikahanUpdateBtn" prefHeight="42.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Update" />
+                              <Button fx:id="crud_deleteBtn" layoutX="179.0" layoutY="422.0" mnemonicParsing="false" onAction="#pernikahanDeleteBtn" prefHeight="45.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Delete" />
+                              <Button fx:id="crud_readBtn" layoutX="42.0" layoutY="422.0" mnemonicParsing="false" onAction="#pernikahanReadBtn" prefHeight="41.0" prefWidth="102.0" styleClass="btn" stylesheets="@CrudFormbaptis.css" text="Read" />
+                              <ComboBox fx:id="txtTempatPernikahan" layoutX="35.0" layoutY="294.0" prefHeight="31.0" prefWidth="250.0" promptText="Pilih Tempat" />
+                              <Label layoutX="60.0" layoutY="41.0" text="FORM PERNIKAHAN">
+                                 <font>
+                                    <Font name="Times New Roman Bold" size="20.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCalonIstri" layoutX="36.0" layoutY="172.0" prefHeight="31.0" prefWidth="250.0" />
+                           </children>
+                        </AnchorPane>
+                        <Separator layoutX="341.0" layoutY="11.0" orientation="VERTICAL" prefHeight="573.0" prefWidth="2.0" />
+                     </children>
+                  </AnchorPane>
+               </left>
+               <center>
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <AnchorPane layoutX="5.0" layoutY="12.0" prefHeight="576.0" prefWidth="869.0" stylesheets="@CrudFormbaptis.css">
+                           <styleClass>
+                              <String fx:value="white-form" />
+                              <String fx:value="border" />
+                           </styleClass>
+                           <children>
+                              <TableView fx:id="crud_tableView" layoutX="12.0" layoutY="14.0" onMouseClicked="#pernikahanSelectData" prefHeight="542.0" prefWidth="842.0">
+                                <columns>
+                                  <TableColumn fx:id="tbl_CalonSuami" prefWidth="145.66668701171875" text="Nama Calon Suami" />
+                                  <TableColumn fx:id="tbl_CalonIstri" prefWidth="147.66668701171875" text="Nama Calon Istri" />
+                                    <TableColumn fx:id="tbl_tanggal" prefWidth="204.6666259765625" text="Hari &amp; Tanggal Pernikahan" />
+                                    <TableColumn fx:id="tbl_TempatPernikahan" minWidth="0.0" prefWidth="195.333251953125" text="Tempat Pernikahan" />
+                                    <TableColumn fx:id="tbl_status" prefWidth="140.3333740234375" text="Status" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </center>
+            </BorderPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
